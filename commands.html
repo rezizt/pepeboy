@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Pepebot">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/alucard.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/6bfbd8fad0.js" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<title>Pepebot - Discord bot</title>
+
+<body class="black white-text">
+    <script>
+        $(document).ready(function() {
+            $('.particles').particleground({
+                dotColor: '#3393FF',
+                lineColor: '#3393FF',
+                density: "400000"
+            });
+        })
+    </script>
+    <div class="navigation">
+        <div class="navbar transparent">
+            <a href="/"><img alt="Alucard" src="img/ALUCARD-RESIZED.png" width="240"></a>
+            <ul class="nav navbar-nav navbar-right">
+                <div class="row">
+                    <li><a href="/" class="button">Home <i class="fas fa-home"></i></a></li>
+                    <li><a href="/commands" class="button">Commands <i class="fas fa-cogs"></i></a></li>
+                    <li><a href="https://discord.gg/BGu62Ha" class="button">Support <i class="fab fa-discord"></i></a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="particles"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+<!-- Commands Table -->
+
+<main>
+    <div class="container">
+        <h3 class="light">Moderation Commands [16]</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ban (user) (reason)</td>
+                    <td>Bans a user with a reason</td>
+                </tr>
+                <td>kick (user) (reason)</td>
+                <td>kick a user with a reason</td>
+                <tr>
+                    <td>mute (user) (time) (reason)</td>
+                    <td>Mutes a user for x amount of time</td>
+                </tr>
+                <td>unmute (user)</td>
+                <td>Unmutes a user</td>
+                <tr>
+                    <td>Warn (user) (reason)</td>
+                    <td>Warns a user for a reason</td>
+                </tr>
+                <td>Clearwarnings (user)</td>
+                <td>Clears the warnings on a user</td>
+                <tr>
+                    <td>clear (amount)</td>
+                    <td>Clears x amount of messages</td>
+                </tr>
+                <td>tempban (user) (hours)</td>
+                <td>temp bans a user for x amount of hours</td>
+                <tr>
+                    <td>prefix (prefix)</td>
+                    <td>changes the bots prefix</td>
+                </tr>
+                <td>banlist</td>
+                <td>shows the ban list (might not work on big servers)</td>
+                <tr>
+                    <td>slowmode (time)</td>
+                    <td>Sets slowmode in the channel</td>
+                </tr>
+                <td>bancheck (user)</td>
+                <td>Checks if a user is banned in discords data base</td>
+                <tr>
+                    <td>nick (user)</td>
+                    <td>Changes the nickname of a user</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3 class="light">Miscellaneous Commands [16]</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>scam (user)</td>
+                    <td>Trys to scam the user</td>
+                </tr>
+                <td>Timer (time) (reason) </td>
+                <td>Starts a timer and you will be reminded when the timer runs out</td>
+                <tr>
+                    <td>fidgetspin</td>
+                    <td>See how long your fidgest spinner will last!</td>
+                </tr>
+                <td>reddit (reddit)</td>
+                <td>Posts the top images from the reddit of choice</td>
+                <tr>
+                    <td>knockknock</td>
+                    <td>Starts a knockknock joke with the bot</td>
+                </tr>
+                <td>catfact</td>
+                <td>Will show a random cat fact!</td>
+                <tr>
+                    <td>Joke</td>
+                    <td>Will show a random joke</td>
+                </tr>
+                <td>hack (user)</td>
+                <td>Will hack the user <td>
+                <tr>
+                    <td>kill (user)</td>
+                    <td>Will try and kill the user</td>
+                </tr>
+				<td>Coinflip</td>
+                <td>Will flip a coin!</td>
+                <tr>   
+                    <td>ping</td>
+                    <td>Pong!</td>
+			    </tr>
+				<td>8ball (question)</td>
+                <td>Will start a 8ball with that question!</td>
+                <tr>   
+                    <td>hotrate</td>
+                    <td>Will see how hot you are</td>
+			    </tr>
+				<td>gay</td>
+                <td>Will see how gay you are!</td>
+                <tr>   
+                    <td>meme</td>
+                    <td>Will show the best memes!</td>
+			    </tr>
+				<td>penis</td>
+                <td>How big is your penis? ;)</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3 class="light">Tool Commands [20]</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>snipe</td>
+                    <td>Will send the last deleted message</td>
+                </tr>
+                <tr>
+                    <td>Insta (instagram name)</td>
+                    <td>Will show stats of that insta user</td>
+                </tr>
+                <tr>
+                    <td>Covid19 (place)</td>
+                    <td>Will show all the covid stats in that place</td>
+                </tr>
+                <td>Changelog</td>
+                <td>Will show the change log</td>
+                <tr>
+                    <td>Country (Country)</td>
+                    <td>Shows stats and facts about that country</td>
+                </tr>
+                <td>Sticky (message)</td>
+                <td>Will make a embed stay at the bottem even if a message is sent (Admin only) </td>
+                <tr>
+                    <td>Password (length)</td>
+                    <td>Will generate a good password and send it to your dms</td>
+                </tr>
+                <td>av (user)/avatar (user)</td>
+                <td>Will send that users avatar</td>
+                <tr>
+                    <td>Botstatus</td>
+                    <td>Will display the bots current status</td>
+                </tr>
+                <td>badges (user)</td>
+                <td>Will show all the users profile badges</td>
+                <tr>
+                    <td>steam (steam name)</td>
+                    <td>Will show the stats for that steam name</td>
+                </tr>
+                <td>Weather (location)</td>
+                <td>Will show the current weather in that location</td>
+				<tr>
+                    <td>Define (word)</td>
+                    <td>Will show the definition of that word</td>
+				</tr>
+                <td>Moresea (sentance)</td>
+                <td>Will do moresea code for that sentance</td>
+				<tr>
+                    <td>Cryptoprice</td>
+                    <td>Will show current cryptoprice</td>
+				</tr>
+                <td>shorturl (Url)</td>
+                <td>Will shorten that url</td>
+				<tr>
+                    <td>qr (word)</td>
+                    <td>Will make a qr code of that word</td>
+				</tr>
+                <td>Google (Word)</td>
+                <td>Will Google that word</td>
+				<tr>
+                    <td>Tiemzones</td>
+                    <td>Will display current time zones</td>
+				</tr>
+                <td>Hastebin (Word)</td>
+                <td>Will make a hastebin for that word (1 min cooldown)</td>
+				</tr>
+            </tbody>
+        </table>
+        <br>
+        <h3 class="light">Text Commands [13]</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>fancy (remove/random) (text)</td>
+                    <td>Picks a font then sends it back</td>
+                </tr>
+                <td>knockknock</td>
+                <td>starts a knockknock joke</td>
+                <tr>
+                    <td>uwuify (sentance)</td>
+                    <td>Generates uwu text</td>
+                </tr>
+                <td>Randomnum</td>
+                <td>generates a random number</td>
+                <tr>
+                    <td>joke</td>
+                    <td>Display a joke</td>
+                </tr>
+                <td>coinflip</td>
+                <td>Flips a coin!</td>
+                <tr>
+                    <td>ping</td>
+                    <td>pong</td>
+                </tr>
+                <td>iq (user)</td>
+                <td>displays the mentioned users iq</td>
+                <tr>
+                    <td>gay (user)</td>
+                    <td>displays the mentioned users gay rate</td>
+                </tr>
+                <td>hoterate (user)</td>
+                <td>displays the mentioned users hote rate</td>
+                <tr>
+                    <td>tabelflip</td>
+                    <td>yes i spelt that wrong</td>
+                </tr>
+                <td>Lenny</td>
+                <td>haha poggers</td>
+                <tr>
+                    <td>penis (user)</td>
+                    <td>displays the mentioned users cock</td>
+            </tbody>
+        </table>
+        <br>
+        <h3 class="light">Image Commands [13]</h3>
+        <table>
+            <tbody>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Kannagen (word) </td>
+                    <td>Will make a kanna with that word</td>
+                </tr>
+                <td>hug (user)</td>
+                <td>hugs the user</td>
+                <tr>
+                    <td>poke (user)</td>
+                    <td>Pokes the user!</td>
+                </tr>
+                <td>Punch (user)</td>
+                <td>will punch the user</td>
+                <tr>
+                    <td>slap (user)</td>
+                    <td>Will slap the user</td>
+                </tr>
+                <td>drake (word:word)</td>
+                <td>Will make a drake meme with the words</td>
+                <tr>
+                    <td>pat (user)</td>
+                    <td>Pats the user</td>
+                </tr>
+                <td>cuddle (user)</td>
+                <td>cuddle a user</td>
+                <tr>
+                    <td>anime (anime name)</td>
+                    <td>shows the anime name</td>
+				</tr>
+                <td>dog</td>
+                <td>woof</td>
+                <tr>
+                    <td>cat</td>
+                    <td>mewow</td>
+				</tr>
+                <td>clyde (message)</td>
+                <td>Makes a fake clyde message</td>
+                <tr>
+                    <td>trumptweet (message)</td>
+                    <td></td>
+                </tr>
+
+        </table>
+        <br>
+        <h3 class="light">Music commands [2]</h3>
+        <table>
+            <tbody>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>play (name/url)</td>
+                        <td>Plays the song in vc
+                    </tr>
+                    <td>upbeat</td>
+                    <td>plays lofi in vc</td>
+                </thead>
+        </table>
+        <br>
+        <h3 class="light">NSFW Commands [6]</h3>
+        <table>
+            <tbody>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                    <td>Ass</td>
+                    <td>boooooody</td>
+                    <tr>
+                        <td>tits</td>
+                        <td>boooooobies</td>
+					</tr>
+                    <td>hentai</td>
+                    <td>animelol</td>
+                    <tr>
+                        <td>porn</td>
+                        <td>might not work idk</td>
+					</tr>
+                    <td>anal</td>
+                    <td>vagknee</td>
+                    <tr>
+                        <td>pussy</td>
+                        <td>meow</td>
+                    </tr>
+                </thead>
+        </table>
+        <br>
+        <h3 class="light">Auto moderator [5]</h3>
+        <table>
+            <tbody>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Badwords (enable/disable)</td>
+                        <td>Enables badwords in a server</td>
+                    </tr>
+                    <td>antinvite (enable/disable)</td>
+                    <td>Enables antinvite in a server</td>
+                    <tr>
+                        <td>antilink (enable/disable)</td>
+                        <td>Enables antilink in a server</td>
+                    </tr>
+                    <td>antispam (enable/disable)</td>
+                    <td>Enables antispam in a server</td>
+                    <tr>
+                        <td>nocomment (enable/disable)</td>
+                        <td>Automatically sends a message if the command doesnt exist with the closest match if enabled</td>
+                    </tr> 
+                </thead>
+        </table>
+    </div>
+</main>
+
+</html>
